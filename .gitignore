@@ -1,0 +1,21 @@
+# Ignore environment files
+.env
+
+# Ignore dependencies (installed via npm install)
+node_modules/
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore OS system files
+.DS_Store
+Thumbs.db
+
+# Ignore build files
+/build
+/dist
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
