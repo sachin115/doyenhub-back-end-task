@@ -1,5 +1,4 @@
-# Ignore environment files
-.env
+
 
 # Ignore dependencies (installed via npm install)
 node_modules/
