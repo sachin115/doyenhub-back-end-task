@@ -3,7 +3,7 @@ const User = require("../models/User");
 // Get Users (Admin & Moderator)
 const getUsers = async (req, res) => {
   try {
-    const { page = 1, limit = 10, search } = req.query;
+    const { page = 1, limit = 3, search } = req.query;
     const query = search ? { _id: search } : {};
     const users = await User.find(query)
       .limit(limit * 1)
