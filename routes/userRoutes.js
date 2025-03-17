@@ -4,6 +4,6 @@ const { protect, adminOnly, moderatorOnly } = require("../middleware/authMiddlew
 const router = express.Router();
 
 router.get("/get-users", protect, moderatorOnly, getUsers);
-router.get("/user-profile", protect, getUserProfile);
+router.get("/user-profile/:id", protect, getUserProfile);
 
 module.exports = router;
